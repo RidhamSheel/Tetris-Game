@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome to Tetris!</h1>
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Use the left and right arrow keys to move the tetrominoes.</li>
+                <li>Use the down arrow key to make the tetrominoes fall down faster.</li>
+                <li>Use the up arrow key to rotate the tetromino.</li>
+                <li>When a row gets completely filled up, it is removed and the score increases by 10.</li>
+                <li>The game ends when no more tetrominoes can fall down.</li>
+            </ol>
+        </div>
+    </div>
+    <button id="start-btn">Start/Pause</button>
+    <div class="container">
+        <div class="grid">
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            <div class="play-area"></div>
+            
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+            <div class="stop"></div>
+        </div>
+
+        <div class="next-grid-container">
+            <div class="next-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+
+            <div style="margin-left: 55px;">Next Up</div>
+
+            <h3>Score: <span id="score">0</span> </h3>
+        </div>
+    </div>
+</body>
+</html>

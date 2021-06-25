@@ -1,0 +1,115 @@
+body{
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(circle, rgb(83 255 62), rgb(202 15 224 / 35%));
+}
+
+/* .welcome{
+    display: flex;
+    flex-direction: column;
+} */
+
+.welcome h1{
+    text-align: center;
+}
+
+.instructions ol li{
+    font-size: large;
+}
+.container{
+    display: flex;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#start-btn{
+    font-family: 'Acme', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 6px 2px;
+    margin-bottom: 5px;
+}
+
+#start-btn:hover{
+    cursor: pointer;
+    animation: bulge 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bulge{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.grid{
+    background-color: #44ff00;
+    height: 440px;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.grid div{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 6px;
+}
+
+.stop{
+    border: none;
+}
+
+.next-grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+.next-grid{
+    margin: 0 0 5px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+    height: 88px;
+    width: 88px;
+}
+
+.next-grid div{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 6px;
+}
+
+h3{
+    margin: 10px 0 5px 50px;
+}
+
+.tetromino{
+    background-color: #e20ec3;
+}
+
+.game-over{
+    display: flex;
+    padding: 5px;
+    height: 50px;
+    width: 100px;
+    margin: 5px 0 0 38px;
+    font-weight: 900;
+    align-items: center;
+}
